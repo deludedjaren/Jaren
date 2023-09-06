@@ -1,0 +1,4 @@
+"0","# complete the code to generate the plot"
+"0",""
+"0","ggplot(data=insert_name_of_variable,mapping=aes(x=Age,y=Rating)) + geom_point() +"
+"0"," labs(x=""Age (Years Old)"",y=""Rating (/5)"")"

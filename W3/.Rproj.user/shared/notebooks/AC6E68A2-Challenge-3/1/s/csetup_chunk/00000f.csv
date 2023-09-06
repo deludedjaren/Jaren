@@ -1,0 +1,4 @@
+"0","knitr::opts_chunk$set(echo = TRUE)"
+"0","tinytex::install_tinytex()"
+"2","Found '/Users/jaren/Library/TinyTeX/bin/universal-darwin/tlmgr', which indicates a LaTeX distribution may have existed in the system.
+"

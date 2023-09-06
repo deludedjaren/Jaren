@@ -1,0 +1,24 @@
+---
+title: "Challenge-1"
+author: "Jaren Ong"
+date: "`r Sys.Date()`"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction about myself
+
+I am a year 3 business student specialising in business economics and human capital management, with a minor in communications and new media. I enjoy learning and growing through experience which forms my personal pedagogy when I help others thorugh the issues that they face. I enjoy learning, travelling and playing football.
+
+```{r, out.height= "500px",out.width= "350px",echo=FALSE,eval=TRUE,fig.cap="Lombard Street"}
+knitr::include_graphics("/Users/jarenong/Downloads/Lombard Street.png") 
+```
+
+```{r, out.height= "400px",out.width= "400px",echo=FALSE,eval=TRUE,fig.cap="Screenshot of R Studio Layout"}
+knitr::include_graphics("/Users/jarenong/Desktop/ScreenshotRStudio.png") 
+```

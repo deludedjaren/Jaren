@@ -1,0 +1,6 @@
+"0","# Enter code here"
+"0","sentimentofproduct <- comm_data %>%"
+"0","  mutate(product_sentiment_score_and_length = sentiment * nchar(message)) %>%"
+"0","  arrange(desc(product_sentiment_score_and_length))"
+"0",""
+"0","sentimentofproduct"

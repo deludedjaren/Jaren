@@ -1,0 +1,6 @@
+"0","# Enter code here"
+"0","negative_sentiment <- comm_data %>%"
+"0","  filter (sentiment < 0) %>%"
+"0","  select(date, channel, message, sentiment)"
+"0",""
+"0","negative_sentiment"

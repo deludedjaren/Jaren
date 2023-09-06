@@ -1,0 +1,8 @@
+"0","# Enter code here"
+"0","no_of_char <- comm_data %>%"
+"0","  group_by(date) %>%"
+"0","  summarise(no_of_char = sum(nchar(message))) %>%"
+"0","  arrange(desc(no_of_char)) %>%"
+"0","  head(1)"
+"0",""
+"0","no_of_char"

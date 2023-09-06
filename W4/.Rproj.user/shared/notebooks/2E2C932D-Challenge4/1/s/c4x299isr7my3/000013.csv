@@ -1,0 +1,5 @@
+"0","# Enter code here"
+"0","message_count <- comm_data %>%"
+"0","  group_by(sender) %>%"
+"0","  count()"
+"0","print(message_count)"

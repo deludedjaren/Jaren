@@ -1,0 +1,82 @@
+---
+title: "Challenge-6"
+author: "Jaren Ong"
+date: "`r Sys.Date()`"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Questions
+<br>
+
+#### Question-1: Countdown Blastoff (While Loop)
+
+Create a program that simulates a rocket launch countdown using a while loop. Start from 10 and countdown to "Blastoff!" with a one-second delay between each countdown number. Print a message when the rocket launches.
+
+**Hint:** You may want to use `cat` command to print the countdown and `Sys.sleep` for incorporating the delay
+
+**Solutions:**
+
+```{r, eval=T,echo=TRUE}
+# Enter code here
+
+# Function to simulate a rocket launch countdown
+countdown <- function() {
+  count <- 10
+  
+  while (count >= 1) {
+    cat("Countdown:", count, "\n")
+    Sys.sleep(1)  # Pause for one second
+    count <- count - 1
+  }
+  
+  cat("Blastoff!\nRocket has launched!\n")
+}
+
+# Call the countdown function
+countdown()
+
+
+```
+<br>
+
+#### Question-2: Word Reverser (for Loop)
+
+Develop a program that takes a user-entered word and uses a while loop to print the word's characters in reverse order. For example, if the user enters "hello," the program should print "olleh."
+
+**Hint:** You may want to use `substr` command to access each character of the input word, and `paste` command to join the reversed letters one at a time
+
+**Solutions:** 
+
+```{r, eval=T,echo=TRUE}
+# Enter code here
+
+# Function to reverse a word using a while loop
+reverse_word <- function() {
+  # Prompt the user to enter a word
+  word <- readline(prompt = "Enter a word: ")
+  
+  # Initialize variables
+  length_word <- nchar(word)  # Get the length of the word
+  reversed_word <- ""         # Initialize an empty string
+  
+  # Use a while loop to reverse the word
+  while (length_word > 0) {
+    reversed_word <- paste(reversed_word, substr(word, length_word, length_word), sep = "")
+    length_word <- length_word - 1
+  }
+  
+  # Print the reversed word
+  cat("Reversed word:", reversed_word, "\n")
+}
+
+# Call the reverse_word function
+reverse_word()
+
+```
+<br>

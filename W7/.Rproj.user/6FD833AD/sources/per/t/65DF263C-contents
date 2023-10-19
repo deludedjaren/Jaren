@@ -1,0 +1,144 @@
+---
+title: "Week-9:Code-along + Challenge"
+author: "Jaren Ong"
+date: "`r Sys.Date()`"
+output:
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### tidy vs non-tidy (slide #8)
+
+```{r, eval=TRUE,echo=TRUE}
+library(tidyverse)
+
+tidydata <- tribble(
+~country, ~year, ~cases, ~population,
+"Afghanistan", 1999, 745, 19987071,
+"Afghanistan", 2000, 2666, 20595360,
+"Brazil", 1999, 37737, 172006362,
+"Brazil", 2000, 80488, 174504898,
+"China", 1999, 212258, 1272915272,
+"China", 2000, 213766, 1280428583)
+
+tidydata
+
+nontidydata <- tribble(
+ ~country,~year,~rate,
+"Afghanistan", 1999, "745/19987071",
+"Afghanistan", 2000, "2666/20595360",
+"Brazil", 1999, "37737/172006362",
+"Brazil", 2000, "80488/174504898",
+"China", 1999, "212258/1272915272",
+"China", 2000, "213766/1280428583")
+
+nontidydata
+```
+
+### Tidy-ing data: Example 1 (Slide #11)
+```{r, eval=TRUE,echo=TRUE}
+
+library(dplyr)
+
+tidieddata <- nontidydata %>%
+ separate(rate, into = c("cases",
+ "population"),
+ sep = "/")
+
+tidieddata
+
+newtidieddata <- tidieddata %>%
+ pivot_longer(
+ cols = cases:population,
+ names_to = "measurement"
+,
+ values_to = "value"
+ )
+
+newtidieddata
+```
+
+### Tidy-ing data: Example 2 (Slide #14)
+```{r, eval=TRUE,echo=TRUE}
+
+df <- tribble(
+ ~id, ~bp1, ~bp2,
+ "A", 100, 120,
+ "B", 140, 115,
+ "C", 120, 125
+)
+
+df
+
+df %>%
+ pivot_longer(
+ cols = bp1:bp2,
+ names_to = "measurement",
+ values_to = "value"
+ )
+
+```
+
+### Reshaping data: Example-3 (Slide #18-19)
+```{r, eval=TRUE,echo=TRUE}
+
+newtidieddata
+
+newtidieddata %>%
+ pivot_wider(names_from="measurement",
+ values_from="value")
+
+```
+
+### Challenge 9 (Part 1)
+```{r, eval=TRUE,echo=TRUE}
+
+# Load the tidyverse package
+library(tidyverse)
+
+# Load the Billboard dataset
+data("billboard")
+
+# Pivot the data
+billboard_long <- billboard %>%
+  pivot_longer(cols = starts_with("wk"), names_to = "week", values_to = "rank", values_drop_na = TRUE)
+
+# Clean the data
+billboard_long <- billboard_long %>%
+  mutate(week = parse_number(week))
+
+# Create a line plot
+ggplot(billboard_long, aes(x = week, y = rank, group = track)) +
+  geom_line() +
+  labs(x = "Week", y = "Rank") +
+  theme_minimal()
+
+
+
+```
+
+
+### Challenge 9 (Part 2)
+```{r, eval=TRUE,echo=TRUE}
+
+# Load the tidyverse package
+library(tidyverse)
+
+# Assuming you have the cms_patient_experience dataset available
+# If not, you need to load the dataset first
+
+# Pivot the dataset using pivot_wider
+cms_patient_experience_wide <- cms_patient_experience %>%
+  pivot_wider(
+    names_from = measure_cd,
+    values_from = prf_rate,
+    id_cols = starts_with("org")
+  )
+
+# Print the resulting dataset
+print(cms_patient_experience_wide)
+
+```

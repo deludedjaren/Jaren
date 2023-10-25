@@ -1,0 +1,6 @@
+"0",""
+"0","# Read data from CSV file"
+"0",""
+"0","data <- read.csv(""/Users/jaren/Desktop/nm2207data.csv"")"
+"0",""
+"0","head(data)  # View the first few rows"

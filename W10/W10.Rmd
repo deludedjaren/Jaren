@@ -1,0 +1,45 @@
+---
+title: "Week-10 Submission"
+author: "Jaren Ong"
+date: "`r Sys.Date()`"
+output:
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### What is the topic that you have finalized?
+This project aims to assess gender inequality in India by comparing female and male labor force participation rates and education levels, shedding light on disparities in economic and educational opportunities.
+
+
+### What are the data sources that you have curated so far?
+
+I have attached the data set I curated in the csv file below.
+
+```{r, eval=FALSE,echo=TRUE}
+
+# Read data from CSV file
+
+data <- read.csv("/Users/jaren/Desktop/nm2207data.csv")
+
+head(data)  # View the first few rows
+
+summary(data)
+
+
+```
+
+### What is the question that you are going to answer? (Answer: One sentence that ends with a question mark that could act like the title of your data story),
+
+Is gender equality getting worse in India?
+
+### Why is this an important question? (Answer: 3 sentences, each of which has some evidence, e.g., “According to the United Nations...” to justify why the question you have chosen is important),
+
+The question of whether gender equality is getting worse in India is significant due to several compelling reasons. According to the United Nations' Human Development Index, India's Gender Inequality Index (GII) ranks it as one of the countries with persistent gender disparities. India's GII, according to the 2020 Human Development Report, stood at 0.501, indicating substantial gender inequality. Furthermore, evidence from the National Family Health Survey-4 (NFHS-4) shows that despite improvements in some areas, India still grapples with gender-based issues like maternal mortality, child marriage, and violence against women, underscoring the need to assess whether the situation is improving or deteriorating. Lastly, tracking changes in gender equality in India is vital as it can inform policy and program development to address disparities and promote a more inclusive and equitable society.
+
+### Which rows and columns of the dataset will be used to answer this question? (Answer: Actual names of the variables in the dataset that you plan to use).
+
+I will be using all 8 variables in the dataset.
+

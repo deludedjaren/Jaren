@@ -1,0 +1,9 @@
+---
+title: "About"
+---
+
+## Introduction
+
+I am Jaren Ong, year 3 business administration student. I find joy in learning and seeking growth. I am proud to have learnt a new skill in R and to apply it in my own capacity. I am grateful for Prof NV's work, as well as the good work of Naman and Yitian.
+
+link to my GitHub: <https://github.com/deludedjaren/Jaren>

@@ -1,0 +1,13 @@
+---
+title: "Is Gender Inequality worsening in India?"
+---
+
+> "The World Economic Forum (WEF) ranked India at 135 out of 146 countries in the Global Gender Gap Index in the report's 2022 edition." --- WEF Report
+
+### This data story seeks to analyse how gender inequality in India has changed over time by answering the following questions:
+
+1.  How has labor force participation rate (LFPR) of males and females changed over time in India?
+2.  What proportion of youth in India are not in Education, Employment or Training?
+3.  How do education levels differ for males and females in India?
+
+

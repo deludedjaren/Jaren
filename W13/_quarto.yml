@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "NM2207 Project"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: Analysis.qmd
+        text: "Inequality in India"
+      - href: Time.qmd
+        text: "Analysis Over Time"
+      - href: about.qmd
+        text: "About"
+
+format:
+  html:
+    theme: lux
+    css: styles.css
+    toc: true
+
+editor: visual
+

@@ -1,0 +1,99 @@
+---
+title: "Is Gender Inequality worsening?"
+---
+
+## How has LFPR changed over time?
+
+```{r, eval=TRUE,echo=FALSE}
+
+library(shiny)
+library(ggplot2)
+suppressMessages(library(dplyr))
+
+# Load dataset
+data <- read.csv("/Users/jaren/Desktop/NM2207 Updated Data.csv")
+
+# Create a ggplot2 line plot for the difference over time
+ggplot(data, aes(x = X, y = Male.LFPR - Female.LFPR)) +
+  geom_line(color = "blue") +
+  labs(
+    title = "Difference in Labor Force Participation Rates Over Time",
+    x = "Year",
+    y = "Difference in Participation Rate (%)",
+    subtitle = "Positive values indicate higher Male LFPR"
+  ) +
+  theme_minimal()
+
+
+```
+
+## Youth exclusion from Education, Employment or Training over time
+
+```{r, eval=TRUE,echo=FALSE}
+
+# Load data 
+dataII <- read.csv("/Users/jaren/Desktop/NM2207 Updated Data II.csv")
+
+# Calculate the absolute difference between Male and Female proportions of Youth not in EET
+dataII$Difference <- abs(dataII$MaleYouthNotInEET - dataII$FemaleYouthNotInEET)
+
+# Create ggplot2 line plot for the difference over time
+ggplot(dataII, aes(x = Year, y = Difference)) +
+  geom_line(color = "#D55E00") +
+  geom_point(color = "#D55E00") +
+  labs(
+    title = "Difference in Proportion of Youth not in EET Over Time",
+    x = "Year",
+    y = "Difference in Proportion (%)",
+    subtitle = "Positive values indicate higher exclusion of female youths"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 16, face = "bold"),
+    axis.title = element_text(size = 14),
+    axis.text = element_text(size = 12),
+    legend.position = "none"
+  )
+
+
+
+```
+
+## Difference between Male and Female education levels over time
+
+```{r, eval=TRUE,echo=FALSE}
+
+# Load data
+dataIII <- read.csv("/Users/jaren/Desktop/NM2207 Updated Data III.csv")
+
+# Calculate the mean of male and female education levels
+dataIII$MeanMaleEducation <- rowMeans(dataIII[, c("MaleLabourForceWithAdvancedEdu", "MaleLabourForceWithIntermediateEdu", "MaleLabourForceWithBasicEdu")], na.rm = TRUE)
+dataIII$MeanFemaleEducation <- rowMeans(dataIII[, c("FemaleLabourForceWithAdvancedEdu", "FemaleLabourForceWithIntermediateEdu", "FemaleLabourForceWithBasicEdu")], na.rm = TRUE)
+
+# Calculate the difference between mean male and mean female education levels
+dataIII$EducationDifference <- dataIII$MeanMaleEducation - dataIII$MeanFemaleEducation
+
+# Create ggplot2 line plot for the difference over time
+ggplot(dataIII, aes(x = Year, y = EducationDifference)) +
+  geom_line(color = "#D55E00") +
+  geom_point(color = "#D55E00") +
+  labs(
+    title = "Difference in Mean Education Levels between Genders Over Time",
+    x = "Year",
+    y = "Difference in Mean Education Level",
+    subtitle = "Positive values indicate higher Male Education Level"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 14, face = "bold"),
+    axis.title = element_text(size = 12),
+    axis.text = element_text(size = 10),
+    legend.position = "none"
+  )
+
+
+```
+
+### Has Gender Inequality worsened?
+
+Through analysis of data from 1990 to 2022, I cannot conclude that gender inequality has worsened over time. Whilst gender inequality remains an issue for India, the above data shows that the economic gap between males and females is reducing as the gap between female LFPR and male LFPR has generally reduced over time. Furthermore, a much larger proportion of female youths now have access to education, employment or training, with the gender gap decreasing from 43% in 1990 to 29% in 2022. Lastly, The average education level of the female worker has seen growth against the average male worker. The educational gap between males and females has decreased from 56% in 2000 to less than 50% in 2022. Whilst gender inequality has improved over time, the improvement can be considered to be minimal, with the gender gap still being very wide, as seen in the recent WEF report which ranked India at 135 out of 146 countries in the Global Gender Gap Index.

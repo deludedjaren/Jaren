@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Jaren Ong">
+<meta name="dcterms.date" content="2023-11-15">
+
+<title>NM2207 Project - Final Submission</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">NM2207 Project</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./Analysis.html" rel="" target="">
+ <span class="menu-text">Inequality in India</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./Time.html" rel="" target="">
+ <span class="menu-text">Analysis Over Time</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#week-9" id="toc-week-9" class="nav-link active" data-scroll-target="#week-9">Week 9</a>
+  <ul class="collapse">
+  <li><a href="#what-is-the-topic-that-you-have-finalized" id="toc-what-is-the-topic-that-you-have-finalized" class="nav-link" data-scroll-target="#what-is-the-topic-that-you-have-finalized">What is the topic that you have finalized?</a></li>
+  <li><a href="#what-are-the-data-sources-that-you-have-curated-so-far" id="toc-what-are-the-data-sources-that-you-have-curated-so-far" class="nav-link" data-scroll-target="#what-are-the-data-sources-that-you-have-curated-so-far">What are the data sources that you have curated so far?</a></li>
+  </ul></li>
+  <li><a href="#week-10" id="toc-week-10" class="nav-link" data-scroll-target="#week-10">Week 10</a>
+  <ul class="collapse">
+  <li><a href="#what-is-the-question-that-you-are-going-to-answer-answer-one-sentence-that-ends-with-a-question-mark-that-could-act-like-the-title-of-your-data-story" id="toc-what-is-the-question-that-you-are-going-to-answer-answer-one-sentence-that-ends-with-a-question-mark-that-could-act-like-the-title-of-your-data-story" class="nav-link" data-scroll-target="#what-is-the-question-that-you-are-going-to-answer-answer-one-sentence-that-ends-with-a-question-mark-that-could-act-like-the-title-of-your-data-story">What is the question that you are going to answer? (Answer: One sentence that ends with a question mark that could act like the title of your data story),</a></li>
+  <li><a href="#why-is-this-an-important-question-answer-3-sentences-each-of-which-has-some-evidence-e.g.-according-to-the-united-nations-to-justify-why-the-question-you-have-chosen-is-important" id="toc-why-is-this-an-important-question-answer-3-sentences-each-of-which-has-some-evidence-e.g.-according-to-the-united-nations-to-justify-why-the-question-you-have-chosen-is-important" class="nav-link" data-scroll-target="#why-is-this-an-important-question-answer-3-sentences-each-of-which-has-some-evidence-e.g.-according-to-the-united-nations-to-justify-why-the-question-you-have-chosen-is-important">Why is this an important question? (Answer: 3 sentences, each of which has some evidence, e.g., “According to the United Nations…” to justify why the question you have chosen is important),</a></li>
+  <li><a href="#which-rows-and-columns-of-the-dataset-will-be-used-to-answer-this-question-answer-actual-names-of-the-variables-in-the-dataset-that-you-plan-to-use." id="toc-which-rows-and-columns-of-the-dataset-will-be-used-to-answer-this-question-answer-actual-names-of-the-variables-in-the-dataset-that-you-plan-to-use." class="nav-link" data-scroll-target="#which-rows-and-columns-of-the-dataset-will-be-used-to-answer-this-question-answer-actual-names-of-the-variables-in-the-dataset-that-you-plan-to-use.">Which rows and columns of the dataset will be used to answer this question? (Answer: Actual names of the variables in the dataset that you plan to use).</a></li>
+  </ul></li>
+  <li><a href="#week-11" id="toc-week-11" class="nav-link" data-scroll-target="#week-11">Week 11</a>
+  <ul class="collapse">
+  <li><a href="#list-the-visualizations-that-you-are-going-to-use-in-your-project-answer-what-are-the-variables-that-you-are-going-to-plot-how-will-it-answer-your-larger-question" id="toc-list-the-visualizations-that-you-are-going-to-use-in-your-project-answer-what-are-the-variables-that-you-are-going-to-plot-how-will-it-answer-your-larger-question" class="nav-link" data-scroll-target="#list-the-visualizations-that-you-are-going-to-use-in-your-project-answer-what-are-the-variables-that-you-are-going-to-plot-how-will-it-answer-your-larger-question">1. List the visualizations that you are going to use in your project (Answer: What are the variables that you are going to plot? How will it answer your larger question?),</a></li>
+  <li><a href="#how-do-you-plan-to-make-it-interactive-answer-features-of-ggplot2shinymarkdown-do-you-plan-to-use-to-make-the-story-interactive" id="toc-how-do-you-plan-to-make-it-interactive-answer-features-of-ggplot2shinymarkdown-do-you-plan-to-use-to-make-the-story-interactive" class="nav-link" data-scroll-target="#how-do-you-plan-to-make-it-interactive-answer-features-of-ggplot2shinymarkdown-do-you-plan-to-use-to-make-the-story-interactive">2. How do you plan to make it interactive? (Answer: features of ggplot2/shiny/markdown do you plan to use to make the story interactive) ,</a></li>
+  <li><a href="#what-concepts-incorporated-in-your-project-were-taught-in-the-course-and-which-ones-were-self-learnt-answer-create-a-table-with-topics-in-one-column-and-weeks-in-the-other-to-indicate-which-concept-taught-in-which-week-is-being-used.-leave-the-entry-of-the-week-column-empty-for-self-learnt-concepts" id="toc-what-concepts-incorporated-in-your-project-were-taught-in-the-course-and-which-ones-were-self-learnt-answer-create-a-table-with-topics-in-one-column-and-weeks-in-the-other-to-indicate-which-concept-taught-in-which-week-is-being-used.-leave-the-entry-of-the-week-column-empty-for-self-learnt-concepts" class="nav-link" data-scroll-target="#what-concepts-incorporated-in-your-project-were-taught-in-the-course-and-which-ones-were-self-learnt-answer-create-a-table-with-topics-in-one-column-and-weeks-in-the-other-to-indicate-which-concept-taught-in-which-week-is-being-used.-leave-the-entry-of-the-week-column-empty-for-self-learnt-concepts">3. What concepts incorporated in your project were taught in the course and which ones were self-learnt? (Answer: Create a table with topics in one column and Weeks in the other to indicate which concept taught in which week is being used. Leave the entry of the Week column empty for self-learnt concepts)</a></li>
+  <li><a href="#include-the-challenges-and-errors-that-you-faced-and-how-you-overcame-them." id="toc-include-the-challenges-and-errors-that-you-faced-and-how-you-overcame-them." class="nav-link" data-scroll-target="#include-the-challenges-and-errors-that-you-faced-and-how-you-overcame-them.">Include the challenges and errors that you faced and how you overcame them.</a></li>
+  </ul></li>
+  <li><a href="#week-12" id="toc-week-12" class="nav-link" data-scroll-target="#week-12">Week 12</a>
+  <ul class="collapse">
+  <li><a href="#include-the-challenges-and-errors-that-you-faced-and-how-you-overcame-them.-1" id="toc-include-the-challenges-and-errors-that-you-faced-and-how-you-overcame-them.-1" class="nav-link" data-scroll-target="#include-the-challenges-and-errors-that-you-faced-and-how-you-overcame-them.-1">Include the challenges and errors that you faced and how you overcame them.</a></li>
+  </ul></li>
+  <li><a href="#final-submission" id="toc-final-submission" class="nav-link" data-scroll-target="#final-submission">Final Submission</a>
+  <ul class="collapse">
+  <li><a href="#what-is-the-theme-of-your-data-story" id="toc-what-is-the-theme-of-your-data-story" class="nav-link" data-scroll-target="#what-is-the-theme-of-your-data-story">1. What is the theme of your data story?</a></li>
+  <li><a href="#why-is-it-important-to-address-this-question" id="toc-why-is-it-important-to-address-this-question" class="nav-link" data-scroll-target="#why-is-it-important-to-address-this-question">2. Why is it important to address this question?</a></li>
+  <li><a href="#why-do-you-think-the-data-sources-that-you-have-curated-can-help-you-answer-the-question" id="toc-why-do-you-think-the-data-sources-that-you-have-curated-can-help-you-answer-the-question" class="nav-link" data-scroll-target="#why-do-you-think-the-data-sources-that-you-have-curated-can-help-you-answer-the-question">3. Why do you think the data sources that you have curated can help you answer the question?</a></li>
+  <li><a href="#what-are-the-insights-from-the-data-and-how-are-they-depicted-in-plots" id="toc-what-are-the-insights-from-the-data-and-how-are-they-depicted-in-plots" class="nav-link" data-scroll-target="#what-are-the-insights-from-the-data-and-how-are-they-depicted-in-plots">4. What are the insights from the data and how are they depicted in plots?</a></li>
+  <li><a href="#how-did-you-implement-this-entire-project-were-there-any-new-concepts-that-you-learnt-to-implement-some-aspects-of-it" id="toc-how-did-you-implement-this-entire-project-were-there-any-new-concepts-that-you-learnt-to-implement-some-aspects-of-it" class="nav-link" data-scroll-target="#how-did-you-implement-this-entire-project-were-there-any-new-concepts-that-you-learnt-to-implement-some-aspects-of-it">5. How did you implement this entire project? Were there any new concepts that you learnt to implement some aspects of it?</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Final Submission</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jaren Ong </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 15, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="week-9" class="level2">
+<h2 class="anchored" data-anchor-id="week-9">Week 9</h2>
+<section id="what-is-the-topic-that-you-have-finalized" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-the-topic-that-you-have-finalized">What is the topic that you have finalized?</h3>
+<p>This project aims to assess gender inequality in India by analysing labor and educational statistics over time.</p>
+</section>
+<section id="what-are-the-data-sources-that-you-have-curated-so-far" class="level3">
+<h3 class="anchored" data-anchor-id="what-are-the-data-sources-that-you-have-curated-so-far">What are the data sources that you have curated so far?</h3>
+<p>I collected secondary data from the CEIC website, which is a website which compiles data sources from a myriad of reliable data sources such as the World Bank, the International Monetary Fund, data.gov.in and more.</p>
+</section>
+</section>
+<section id="week-10" class="level2">
+<h2 class="anchored" data-anchor-id="week-10">Week 10</h2>
+<section id="what-is-the-question-that-you-are-going-to-answer-answer-one-sentence-that-ends-with-a-question-mark-that-could-act-like-the-title-of-your-data-story" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-the-question-that-you-are-going-to-answer-answer-one-sentence-that-ends-with-a-question-mark-that-could-act-like-the-title-of-your-data-story">What is the question that you are going to answer? (Answer: One sentence that ends with a question mark that could act like the title of your data story),</h3>
+<p>Is gender equality getting worse in India?</p>
+</section>
+<section id="why-is-this-an-important-question-answer-3-sentences-each-of-which-has-some-evidence-e.g.-according-to-the-united-nations-to-justify-why-the-question-you-have-chosen-is-important" class="level3">
+<h3 class="anchored" data-anchor-id="why-is-this-an-important-question-answer-3-sentences-each-of-which-has-some-evidence-e.g.-according-to-the-united-nations-to-justify-why-the-question-you-have-chosen-is-important">Why is this an important question? (Answer: 3 sentences, each of which has some evidence, e.g., “According to the United Nations…” to justify why the question you have chosen is important),</h3>
+<p>The question of whether gender equality is getting worse in India is significant due to several compelling reasons. According to the United Nations’ Human Development Index, India’s Gender Inequality Index (GII) ranks it as one of the countries with persistent gender disparities. India’s GII, according to the 2020 Human Development Report, stood at 0.501, indicating substantial gender inequality. Furthermore, evidence from the National Family Health Survey-4 (NFHS-4) shows that despite improvements in some areas, India still grapples with gender-based issues like maternal mortality, child marriage, and violence against women, underscoring the need to assess whether the situation is improving or deteriorating. Lastly, tracking changes in gender equality in India is vital as it can inform policy and program development to address disparities and promote a more inclusive and equitable society.</p>
+</section>
+<section id="which-rows-and-columns-of-the-dataset-will-be-used-to-answer-this-question-answer-actual-names-of-the-variables-in-the-dataset-that-you-plan-to-use." class="level3">
+<h3 class="anchored" data-anchor-id="which-rows-and-columns-of-the-dataset-will-be-used-to-answer-this-question-answer-actual-names-of-the-variables-in-the-dataset-that-you-plan-to-use.">Which rows and columns of the dataset will be used to answer this question? (Answer: Actual names of the variables in the dataset that you plan to use).</h3>
+<p>I will use “Female.LFPR”, “Male.LFPR”, “MaleYouthNotInEET”, “FemaleYouthNotInEET”, “MaleLabourForceWithAdvancedEdu”, “MaleLabourForceWithIntermediateEdu”, “MaleLabourForceWithBasicEdu”, “FemaleLabourForceWithAdvancedEdu”, “FemaleLabourForceWithIntermediateEdu”, “FemaleLabourForceWithBasicEdu”.</p>
+</section>
+</section>
+<section id="week-11" class="level2">
+<h2 class="anchored" data-anchor-id="week-11">Week 11</h2>
+<section id="list-the-visualizations-that-you-are-going-to-use-in-your-project-answer-what-are-the-variables-that-you-are-going-to-plot-how-will-it-answer-your-larger-question" class="level3">
+<h3 class="anchored" data-anchor-id="list-the-visualizations-that-you-are-going-to-use-in-your-project-answer-what-are-the-variables-that-you-are-going-to-plot-how-will-it-answer-your-larger-question">1. List the visualizations that you are going to use in your project (Answer: What are the variables that you are going to plot? How will it answer your larger question?),</h3>
+<p>I am going to plot Male LFPR and Female LFPR against Time to show: (1) the stark difference between male and female LFPR and (2) how LFPR for both genders have changed over time in order to answer the question of whether or not gender inequality is worsening in terms of occupational and economic opportunities.</p>
+<p>Next, I will plot the difference in educational levels between males and female workers to see how males have unfair access to education when compared to their female counterparts.</p>
+</section>
+<section id="how-do-you-plan-to-make-it-interactive-answer-features-of-ggplot2shinymarkdown-do-you-plan-to-use-to-make-the-story-interactive" class="level3">
+<h3 class="anchored" data-anchor-id="how-do-you-plan-to-make-it-interactive-answer-features-of-ggplot2shinymarkdown-do-you-plan-to-use-to-make-the-story-interactive">2. How do you plan to make it interactive? (Answer: features of ggplot2/shiny/markdown do you plan to use to make the story interactive) ,</h3>
+<p>I will focus on using ggplot2 to create meaningful visualizations which can walk the user through the issue of gender inequality in India. I have made the decision not to incorporate shiny into my webpage as I feel that the plots generated are sufficient in answering the question of whether or not gender inequality is worsening in India.</p>
+</section>
+<section id="what-concepts-incorporated-in-your-project-were-taught-in-the-course-and-which-ones-were-self-learnt-answer-create-a-table-with-topics-in-one-column-and-weeks-in-the-other-to-indicate-which-concept-taught-in-which-week-is-being-used.-leave-the-entry-of-the-week-column-empty-for-self-learnt-concepts" class="level3">
+<h3 class="anchored" data-anchor-id="what-concepts-incorporated-in-your-project-were-taught-in-the-course-and-which-ones-were-self-learnt-answer-create-a-table-with-topics-in-one-column-and-weeks-in-the-other-to-indicate-which-concept-taught-in-which-week-is-being-used.-leave-the-entry-of-the-week-column-empty-for-self-learnt-concepts">3. What concepts incorporated in your project were taught in the course and which ones were self-learnt? (Answer: Create a table with topics in one column and Weeks in the other to indicate which concept taught in which week is being used. Leave the entry of the Week column empty for self-learnt concepts)</h3>
+<table class="table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 83%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Week</th>
+<th>Concept Used + How It Was Used</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>How to use Rstudio + Using Rmarkdown</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Data visualization and use of ggplot2</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>Tidying my data to ensure that it works in ggplot2</td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td>Creating meaningful visualizations. I mainly used geom_line to show change over time.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>I used scale_color_manual to adjust color of my geom_lines</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>I used rowMeans function to find mean of row</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="include-the-challenges-and-errors-that-you-faced-and-how-you-overcame-them." class="level3">
+<h3 class="anchored" data-anchor-id="include-the-challenges-and-errors-that-you-faced-and-how-you-overcame-them.">Include the challenges and errors that you faced and how you overcame them.</h3>
+<p>I attempted to incorporate shiny into my webpage but was not successful. I managed to run the app in Rstudio but could not get it to work when I published it. After thorough consideration, I decided to move on without the use of shiny as I felt that it did not add significant value to my story.</p>
+</section>
+</section>
+<section id="week-12" class="level2">
+<h2 class="anchored" data-anchor-id="week-12">Week 12</h2>
+<section id="include-the-challenges-and-errors-that-you-faced-and-how-you-overcame-them.-1" class="level3">
+<h3 class="anchored" data-anchor-id="include-the-challenges-and-errors-that-you-faced-and-how-you-overcame-them.-1">Include the challenges and errors that you faced and how you overcame them.</h3>
+<p>Over W12, I attempted to plot ggplot2 graphs but struggled to do so for some variables due to the presence of NA values. I was not confident in tidying data in R before plotting it out. I sought help from Prof NV which allowed me to make progress as I was able to plot the graphs I wanted to answer the questions I had in mind.</p>
+<p>That being said, given that this is the first time I am creating a website, I remained unsure on how to design it in a way that looks aesthetic. I also struggled to come up with a coherent story which conveyed the main issue that my website is trying to address. I am still in the process of coming up with questions which would allow me to answer the issue of how gender inequality has evolved over time in India.</p>
+</section>
+</section>
+<section id="final-submission" class="level2">
+<h2 class="anchored" data-anchor-id="final-submission">Final Submission</h2>
+<section id="what-is-the-theme-of-your-data-story" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-the-theme-of-your-data-story">1. What is the theme of your data story?</h3>
+<p>The theme of the data story revolves around assessing gender inequality in India by analyzing labor and educational statistics over time. The primary question addressed is whether gender equality is worsening in India, and key variables such as Female LFPR, Male LFPR, and educational levels are utilized to explore this theme. The story aims to shed light on disparities in occupational and economic opportunities, emphasizing the need to understand and address gender-based issues in the country.</p>
+</section>
+<section id="why-is-it-important-to-address-this-question" class="level3">
+<h3 class="anchored" data-anchor-id="why-is-it-important-to-address-this-question">2. Why is it important to address this question?</h3>
+<p>Addressing the question of whether gender equality is worsening in India is crucial for several reasons.</p>
+<p>First, global indicators such as the United Nations’ Human Development Index and the Gender Inequality Index highlight persistent gender disparities in the country. A high Gender Inequality Index (GII) score, as seen in India’s case, signifies substantial gender inequality.</p>
+<p>Second, evidence from the National Family Health Survey-4 (NFHS-4) indicates that despite some improvements, India still faces challenges related to maternal mortality, child marriage, and violence against women. These factors influence educational and economic opportunities available to women. Understanding the trajectory of gender inequality is essential to identify areas for improvement and inform policy and program development.</p>
+<p>Lastly, tracking changes in gender equality over time provides insights into societal progress and helps create a more inclusive and equitable environment. By addressing this question, the data story aims to contribute to the ongoing dialogue on gender equality and promote initiatives that can lead to positive changes in India’s social and economic landscape.</p>
+</section>
+<section id="why-do-you-think-the-data-sources-that-you-have-curated-can-help-you-answer-the-question" class="level3">
+<h3 class="anchored" data-anchor-id="why-do-you-think-the-data-sources-that-you-have-curated-can-help-you-answer-the-question">3. Why do you think the data sources that you have curated can help you answer the question?</h3>
+<p>The curated data sources, obtained from the CEIC website, which compiles information from reliable sources like the World Bank, the International Monetary Fund, and data.gov.in, provide a comprehensive and authoritative foundation for assessing gender inequality in India. Here’s why these sources are instrumental in answering the question:</p>
+<p>First, the data sources are credible and diverse. The CEIC website aggregates data from globally recognized institutions, ensuring the credibility and reliability of the information. By drawing from diverse sources, the data captures a holistic view of gender-related indicators, enriching the analysis.</p>
+<p>Second, a longitudinal perspective is provided. The data sources offer a longitudinal perspective by including historical data. This allows for the examination of trends and changes over time, enabling a nuanced understanding of whether gender equality in India is improving or deteriorating.</p>
+<p>Third, a comprehensive range of indicators were included. The dataset includes crucial variables such as Female LFPR, Male LFPR, and educational levels, which are vital metrics for evaluating gender inequality in both economic and educational domains. This diversity of indicators enhances the depth and breadth of the analysis.</p>
+</section>
+<section id="what-are-the-insights-from-the-data-and-how-are-they-depicted-in-plots" class="level3">
+<h3 class="anchored" data-anchor-id="what-are-the-insights-from-the-data-and-how-are-they-depicted-in-plots">4. What are the insights from the data and how are they depicted in plots?</h3>
+<p>My initial hypothesis going into this data experience was that gender inequality is worsening in India. My impression was formed by media sources which depicted how female labor involvement remained low even as India experienced significant economic growth. Through analysis of my data and visualizations, I drew the following insights:</p>
+<p>First, there is a general reduction in economic gap between genders. The data indicates a decreasing gap between Female LFPR (Labor Force Participation Rate) and Male LFPR, hence suggesting that the economic gap between males and females in India has generally reduced over time.</p>
+<p>Second, there are increased educational and vocational opportunities for female youths. A larger proportion of female youths in India now have access to education, employment, or training. The gender gap in this regard has decreased from 43% in 1990 to 29% in 2022.</p>
+<p>Third, the educational gap between males and females has decreased. The educational gap between males and females has decreased from 56% in 2000 to less than 50% in 2022, this indicates that the average education level of a female worker has increased relative to a male worker.</p>
+<p>Considering all of the above points, I would still conclude that there has been minimal improvement in gender inequality in India. While improvements have occurred, the overall progress in reducing gender inequality is considered minimal. The recent Global Gender Gap Index ranking India at 135 out of 146 countries underscores persistent challenges.</p>
+</section>
+<section id="how-did-you-implement-this-entire-project-were-there-any-new-concepts-that-you-learnt-to-implement-some-aspects-of-it" class="level3">
+<h3 class="anchored" data-anchor-id="how-did-you-implement-this-entire-project-were-there-any-new-concepts-that-you-learnt-to-implement-some-aspects-of-it">5. How did you implement this entire project? Were there any new concepts that you learnt to implement some aspects of it?</h3>
+<p>First, I utilized the CEIC website to collect secondary data from reputable sources like the World Bank, the International Monetary Fund, and data.gov.in. This process provided me with understanding on how to navigate and extract relevant data from diverse sources. This is a valuable skill that involves assessing data reliability, relevance, and compatibility for analysis.</p>
+<p>Second, I formulated the Key Question of whether gender equality is worsening in India. Developing a precise and relevant research question was essential for driving the focus of the project and aligning it with broader social issues.</p>
+<p>Third, I had to make decisions on which variables to include and exclude. I ended up choosinng key variables such as Female LFPR, Male LFPR, and educational indicators to answer the central question. The selection of variables required a strategic approach to ensure they effectively address the research question and provide meaningful insights.</p>
+<p>Forth, I learnt how to create visualizations using ggplot2 to represent trends in labor force participation and educational disparities. Learning and implementing ggplot2 for data visualization involved understanding its syntax and capabilities, enhancing the storytelling aspect of the data.</p>
+<p>Fifth, I learned how to create a website to present the data story, even though I struggled with design aesthetics and narrative coherence. Considerations behind my website design involved considering user experience, aesthetics, and creating a narrative flow that effectively communicates the key insights.</p>
+<p>Word Count (for final submission): 964 Words</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
